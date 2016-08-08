@@ -1,0 +1,25 @@
+
+<!-- table zwave_devices search -->
+<div  id='api_settings'>
+&nbsp;
+<form action="?" method="post" enctype="multipart/form-data" name="frmEdit" class="form-horizontal">
+<fieldset>
+<!-- CODE (text) -->
+<div class="form-group ">
+        <label class="col-lg-4 control-label" for="inputTitle"><#LANG_CODE#>:</label>
+        <div class="col-lg-5 [#if ERR_CODE#]alert-danger[#endif#]">
+			[#if ERRORS!=""#]<br><font color='red'>[#ERRORS#]</font><br>[#endif ERRORS#]
+            [#module name="blockly_code" system_name="tlgaction<#ID#>" code_field="code" action=""#] 
+			<div id="code_area">
+			  <textarea name="code" id="code" rows=30 cols=100 class=" form-control field span8">[#CODE#]</textarea>
+			</div>
+		</div>
+</div> 
+<div class="form-actions">
+<button type="submit" name="subm" value="Submit" class="btn btn-primary"><#LANG_UPDATE#></button>
+<input type="hidden" name="view_mode" value="update_settings">
+<input type="hidden" name="mode" value="update">
+</div>
+</fieldset>
+</form>
+</div>
