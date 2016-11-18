@@ -158,7 +158,7 @@ function usual(&$out) {
 * @access private
 */
  function install($data='') {
-  subscribeToEvent($this->name, 'SAY');
+  subscribeToEvent($this->name, 'SAY', '', 10);
   parent::install();
  }
 // --------------------------------------------------------------------
